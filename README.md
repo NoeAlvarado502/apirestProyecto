@@ -34,7 +34,7 @@ La estructura principal del proyecto es la siguiente:
 ├── .gitignore        # Archivos a ignorar por Git
 ├── package.json      # Dependecias y scripts del proyecto
 ├── README.me         # Documentación del proyecto
-├── .GDA00460-OT-NoeAlvarado.sql        # Script de la base de datos
+├── GDA00460-OT-NoeAlvarado.sql        # Script de la base de datos
 
 ```
 
