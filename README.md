@@ -121,8 +121,8 @@ Asegúrte de tener el script configurado en tu archivo `package.json`:
 
 | Método | Endpoint                 | Descripción                             |
 |--------|--------------------------|-----------------------------------------|
-| POST   | `api/auth/login`         | Autenticación y generación de JWT       |
 | POST   | `api/auth/register`      | Registro de nuevos usuarios             |
+| POST   | `api/auth/login`         | Autenticación y generación de JWT       |
 | POST   | `api/estados`            | Creación de nuevos estados              |
 | PUT    | `api/estados`            | Actualización de un estado              |
 | POST   | `api/categoriasproductos`| Creación de categorías de productos     |
@@ -132,7 +132,29 @@ Asegúrte de tener el script configurado en tu archivo `package.json`:
 | POST   | `api/ordenes`            | Creación de nuevas órdenes              |
 | PUT    | `api/ordenes`            | Actualización de una orden              |
 
-Todos los endpoints requieren Token y Rol ('Admin'), exceptuando el POST api/auth/login
+Todos los endpoints requieren enviar un Token en el encabezado, y que el usuario tenga el rol ADMIN, exceptuando el POST api/auth/login.
+
+### POST `api/auth/register`
+
+Este endpoint permite registrar un nuevo usuario en la aplicación.
+
+#### Request
+
+- **URL:** `api/auth/register`
+- **Método HTTP:** POST
+- **Cuerpo de la solicitud:**
+
+```json
+{
+  "idRol": "integer",
+  "nombre": "string",
+  "email": "string",
+  "password": "string",
+  "telefono": "string",
+  "direccion": "string",
+  "fechaNacimiento": "string"
+}
+```
 
 ### POST `api/auth/login`
 
@@ -160,28 +182,6 @@ Este endpoint permite a un usuario autenticarse en la aplicación y obtener un t
 {
   "message": "Inicio de sesión exitoso.",
   "token": "string"
-}
-```
-
-### POST `api/auth/register`
-
-Este endpoint permite registrar un nuevo usuario en la aplicación.
-
-#### Request
-
-- **URL:** `api/auth/register`
-- **Método HTTP:** POST
-- **Cuerpo de la solicitud:**
-
-```json
-{
-  "idRol": "integer",
-  "nombre": "string",
-  "email": "string",
-  "password": "string",
-  "telefono": "string",
-  "direccion": "string",
-  "fechaNacimiento": "string"
 }
 ```
 
