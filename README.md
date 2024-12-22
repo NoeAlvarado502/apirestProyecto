@@ -42,10 +42,12 @@ La estructura principal del proyecto es la siguiente:
 
 Ejecute por completo el script de la base de datos.
 
-Creara estados, roles y usuario para el correcto funcionamiento del API
+Creara estados, roles y usuario para el correcto funcionamiento del API.
 
+Datos del usuario que fue creado en el script.
 ```
 {
+  "idRol": 1,            //idRol de ADMIN
   "email": "test@test",
   "password": "test"
 }
@@ -88,7 +90,7 @@ Creara estados, roles y usuario para el correcto funcionamiento del API
 
   # Configuración de JWT
   SECRET_JWT_KEY = secret
-  JWT_EXPIRES_IN = 24h
+  JWT_EXPIRES_IN = 24h      //Según requisitos utilizar esta duración.
   ```
    
 ## Configuración
