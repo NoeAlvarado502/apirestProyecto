@@ -338,22 +338,27 @@ Este endpoint permite crear un nuevo producto.
 }
 ```
 
-### PUT `api/ordenes`
+### PUT `api/productos`
 
-Este endpoint permite actualizar una orden existente.
+Este endpoint permite actualizar un producto existente.
 
 #### Request
 
-- **URL:** `api/ordenes`
+- **URL:** `api/productos`
 - **Método HTTP:** PUT
 - **Cuerpo de la solicitud:**
 
 ```json
 {
-  "idOrden": "integer",
+  "idProducto": "integer",
   "idEstado": "integer",
-  "idUsuario": "integer",
-  "fechaEntrega": "string"
+  "idCategoriaProducto": "integer",
+  "nombre": "sting",
+  "marca": "sting",
+  "codigo": "string",
+  "stock": "integer",
+  "precio": "number",
+  "imagen": "string"
 }
 ```
 
