@@ -128,8 +128,8 @@ Asegúrte de tener el script configurado en tu archivo `package.json`:
 | POST   | `api/categoriasproductos`| Creación de categorías de productos     |
 | PUT    | `api/categoriasproductos`| Actualización de categorías de productos|
 | POST   | `api/productos`          | Creación de nuevos productos            |
-| PUT    | `api/productos`          | Creación de nuevos productos            |
-| POST   | `api/ordenes`            | Creación de nuevas órdenes              |
+| PUT    | `api/productos`          | Actualización de un producto            |
+| POST   | `api/ordenes`            | Creación de nuevas ordenes              |
 | PUT    | `api/ordenes`            | Actualización de una orden              |
 
 Todos los endpoints requieren enviar un Token en el encabezado, y que el usuario tenga el rol ADMIN, exceptuando el POST api/auth/login.
