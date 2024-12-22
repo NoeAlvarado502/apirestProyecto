@@ -69,7 +69,7 @@ Creara estados, roles y usuario para el correcto funcionamiento del API
 
 3. Configura las variables de entorno creando un archivo `.env` en la raíz del proyecto. Ejemplo:
 
-   ```
+  
   # Configuración del servidor
   PORT = 4000
   
@@ -89,7 +89,7 @@ Creara estados, roles y usuario para el correcto funcionamiento del API
   # Configuración de JWT
   SECRET_JWT_KEY = secret
   JWT_EXPIRES_IN = 24h
-  ```
+
    
 ## Configuración
 
