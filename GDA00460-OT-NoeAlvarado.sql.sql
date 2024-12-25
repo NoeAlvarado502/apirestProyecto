@@ -431,7 +431,7 @@ EXEC InsertarUsuario
 		@idRol = 1, 
 		@nombre = 'test', 
 		@email = 'test@test', 
-		@password = 'test', 
+		@password = '$2a$10$gbsMMQls07BXagaoFIxoX.OncT.3Zxbn4xVERSUTMhOVNWmoywswG', 
 		@telefono = '83788378', 
 		@direccion = 'Ciudad',
 		@fechaNacimiento = '01/01/2000'
