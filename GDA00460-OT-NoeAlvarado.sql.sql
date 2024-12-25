@@ -189,7 +189,7 @@ BEGIN
 END;
 GO
 
-CREATE PROCEDURE BuscarUsuarioRegister
+CREATE PROCEDURE BuscarUsuario
 	@email VARCHAR(45)
 AS
 BEGIN
@@ -229,7 +229,7 @@ BEGIN
         VALUES (1, @nombre, GETDATE());
     END TRY
     BEGIN CATCH
-        PRINT 'Error al insertar la categoría de producto: ' + ERROR_MESSAGE();
+        PRINT 'Error al insertar la categorÃ­a de producto: ' + ERROR_MESSAGE();
     END CATCH;
 END;
 GO
@@ -248,7 +248,7 @@ BEGIN
         WHERE idCategoriaProducto = @idCategoriaProducto;
     END TRY
     BEGIN CATCH
-        PRINT 'Error al actualizar la categoría de producto: ' + ERROR_MESSAGE();
+        PRINT 'Error al actualizar la categorÃ­a de producto: ' + ERROR_MESSAGE();
     END CATCH;
 END;
 GO
